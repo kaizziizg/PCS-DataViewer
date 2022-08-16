@@ -10438,9 +10438,9 @@ a.link-on-bg:hover {
 	font-weight: 600;
 	padding-top: 0;
 }
-.site-logo img{
-    width: 3rem; 
-    border-radius:50%;
+.site-logo img {
+	width: 3rem;
+	border-radius: 50%;
 }
 
 .navbar {
@@ -10682,8 +10682,36 @@ a.link-on-bg:hover {
 	}
 }
 
-.HeadbarText{
+.HeadbarText {
 	margin-top: 0.5rem;
-	font-size:1.5rem;
+	font-size: 1.5rem;
 	font-weight: bold;
+}
+
+.errorText {
+	font-size: 5rem;
+	font-weight: bold;
+}
+.errorImg {
+	margin-top: 10rem;
+	border-radius: 50%;
+	height: 25vh;
+}
+
+.rotate {
+	animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(359deg);
+	}
+}
+
+.QATitle{
+	margin-top: 3rem;  
+	margin-bottom: 5rem;  
 }
