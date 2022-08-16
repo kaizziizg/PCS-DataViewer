@@ -20,8 +20,10 @@ export default function TotalTournament() {
         Team1: ["BYG",],
         Team2: ["JT",],
         Weekend: [5,],
+        T1Win :[1],
+        T2Win :[1]
       });
-      let cardList = [];
+    let cardList = [];
 	
 	useEffect(() => {
         
@@ -34,10 +36,10 @@ export default function TotalTournament() {
 		})
     }
 
-    for (let i = 0; i < Data.Team1.length; i++) {
-        cardList.push(<li key={i}><Tournament date={Data.DateTime[i]} weekend={Data.Weekend[i]} t1={Data.Team1[i]} t2={Data.Team2[i]}/></li>);
-    }
     
+    for (let i = 0; i < Data.Team1.length; i++) {
+        cardList.push(<Tournament date={Data.DateTime[i]} weekend={Data.Weekend[i]} t1={Data.Team1[i]} t2={Data.Team2[i]} t1w={Data.T1Win[i]} t2w={Data.T2Win[i]} />);
+    }
     
     return (
         <ul>
@@ -47,19 +49,18 @@ export default function TotalTournament() {
 }
 
 function Tournament(props) {
-    let date = new Date();
-    // let leftDay,leftHour,leftMinutes = TimeDistance(today(),props.date)
-    let leftHour,leftMinutes = 0
+
     let leftTime = TimeDistance(props.date)
 	return (
 		<div className="container py-lg-5 position-relative">
 			<Card className="text-center">
-				<Card.Header>{props.date} 星期{props.weekend} </Card.Header>
+				<Card.Header>{props.date} 星期 {props.weekend} </Card.Header>
 				<Card.Body>
 					<Card.Title>{props.t1} VS {props.t2}</Card.Title>
-					{/* <Card.Text>
-                    {props.t1}vs{props.t2}
-					</Card.Text> */}
+					<Card.Text>
+                    夏季賽戰績<br/>
+                    {props.t1w} : {props.t2w} 
+					</Card.Text>
 					<Button variant="primary">雙方選手數據比較</Button>
 				</Card.Body>
 				<Card.Footer className="text-muted">距離開始尚有 : {leftTime[0]} 日 {leftTime[1]} 小時 {leftTime[2]} 分 </Card.Footer>

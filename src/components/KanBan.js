@@ -37,7 +37,7 @@ export default function KanBan() {
 							<NavLink to="/" className="nav-link me-lg-4">未來賽程</NavLink>
 							<NavLink to="/Player" className="nav-link me-lg-4">選手數據</NavLink>
 							<NavLink to="/FirstTeam" className="nav-link me-lg-4">夏季第一隊</NavLink>
-							<NavLink to="/HeroPick" className="nav-link me-lg-4">英雄選用率</NavLink>
+							<NavLink to="/ChampionPick" className="nav-link me-lg-4">英雄選用率</NavLink>
 							<NavLink to="/QA" className="nav-link me-lg-4">Q&A</NavLink>
 							
 						</Nav>

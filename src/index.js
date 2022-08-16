@@ -4,7 +4,7 @@ import ReactDOM from "react-dom/client";
 import ScheudlePage from "./page/SchedulePage";
 import PlayerDataPage from "./page/PlayerDataPage";
 import FirstTeamPage from "./page/FirstTeamPage";
-import HeroPickPage from "./page/HeroPickPage";
+import ChampionPickPage from "./page/ChampionPickPage";
 import QAPage from "./page/QAPage";
 // HeaderBar
 import KanBan from "./components/KanBan";
@@ -42,7 +42,7 @@ const App = () => {
 					<Route path="/QA" element={<QAPage />} />
 					<Route path="/Player" element={<PlayerDataPage />} />
 					<Route path="/FirstTeam" element={<FirstTeamPage />} />
-					<Route path="/HeroPick" element={<HeroPickPage />} />
+					<Route path="/ChampionPick" element={<ChampionPickPage />} />
 					<Route path="/" element={<ScheudlePage />} />
 					<Route path="*" element={<Not404 />} />
 				</Routes>
