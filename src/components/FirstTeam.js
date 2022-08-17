@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Table from "react-bootstrap/Table";
 import axios from "axios";
+import {ServerIP} from "../Environment"
 
-const server = "http://127.0.0.1";
+const server = ServerIP;
 
 export default function FirstTeam() {
 	const [Top, setTop] = useState({
@@ -30,7 +31,7 @@ export default function FirstTeam() {
 		Players: [],
 		Scores: [],
 	});
-	console.log(Top);
+	
 
 	let TableList = [];
 

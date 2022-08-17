@@ -18,7 +18,7 @@ export default function KanBan() {
 					{/* 左邊Logo+Title */}
 					<Navbar.Brand href="/">
 						<h1 className="site-logo">
-							<a className="navbar-brand" href="/">
+							<NavLink to="/" className="navbar-brand">
 								<img
 									className="logo-icon"
 									src="/img/icon512.png"
@@ -26,7 +26,7 @@ export default function KanBan() {
 								/>
 								{/* <span className="pcs-logo-text">PCS</span> */}
 								<span className="logo-text">PCS DataViewer</span>
-							</a>
+								</NavLink>
 						</h1>
 					</Navbar.Brand>
 					{/* 右邊選項 */}

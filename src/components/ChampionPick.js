@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from "react";
 import Table from "react-bootstrap/Table";
 import axios from "axios";
+import {ServerIP} from "../Environment"
 
+const server = ServerIP;
 export default function ChampionPick() {
 	const [Data, setData] = useState({
 		Champions: ["亞菲利歐"],
 		Times: [1],
 	});
-	console.log(Data);
+	
 
 	let TableList = [];
 
@@ -15,7 +17,7 @@ export default function ChampionPick() {
 		axiosGetChampionPick();
 	}, []);
 	const axiosGetChampionPick = () => {
-		axios.get("http://127.0.0.1/ChampionPick").then(function (res) {
+		axios.get(server+"/ChampionPick").then(function (res) {
 			setData(res.data);
 		});
 	};

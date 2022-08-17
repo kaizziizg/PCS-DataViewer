@@ -32,9 +32,9 @@ function QADrawer(){
 		res.push(<br></br>)
 	}
 	return(
-		<ul>
+		<div>
 			{res}
-		</ul>
+		</div>
 	)
 }
 

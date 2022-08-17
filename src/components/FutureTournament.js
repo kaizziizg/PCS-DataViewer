@@ -2,6 +2,9 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Card, Button } from "react-bootstrap";
 
+import {ServerIP} from "../Environment"
+
+const server = ServerIP;
 function TimeDistance(date2) {  
     let date1 = new Date().getTime();   
     date2 = Date.parse(date2);
@@ -31,7 +34,7 @@ export default function TotalTournament() {
 	}, []);
 
     const axiosGetSchedule = ()=>{
-        axios.get("http://127.0.0.1/schedule").then(function (res) {
+        axios.get(server+"/schedule").then(function (res) {
             setData(res.data);
 		})
     }
@@ -42,9 +45,9 @@ export default function TotalTournament() {
     }
     
     return (
-        <ul>
+        <div>
             {cardList}
-        </ul>
+        </div>
     )
 }
 
