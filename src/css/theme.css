@@ -10713,5 +10713,23 @@ a.link-on-bg:hover {
 
 .QATitle{
 	margin-top: 3rem;  
-	margin-bottom: 5rem;  
+	margin-bottom: 3rem;  
+}
+
+.PlayerName{
+	font-size: 2rem;
+}
+
+.PlayerScore{
+	font-size: 1.5rem;
+	margin-top: -1rem;
+	color: orange;
+}
+.PlayerScore{
+	font-size: 1.5rem;
+	margin-top: -1rem;
+	color: orange;
+}
+.Ranking{
+	padding: auto;
 }
