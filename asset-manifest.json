@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/PCS-DataViewer/static/css/main.fc48bcdb.css",
-    "main.js": "/PCS-DataViewer/static/js/main.0106c9ca.js",
+    "main.js": "/PCS-DataViewer/static/js/main.8cb5f38f.js",
     "static/media/hero-figure.png": "/PCS-DataViewer/static/media/hero-figure.3df73fc6d894db142d70.png",
     "static/media/maven-pro-all-400-normal.woff": "/PCS-DataViewer/static/media/maven-pro-all-400-normal.0bcba1dcb950fcfd5724.woff",
     "static/media/maven-pro-latin-400-normal.woff2": "/PCS-DataViewer/static/media/maven-pro-latin-400-normal.fb07c71fe1cd05fb6d82.woff2",
@@ -10,10 +10,10 @@
     "static/media/bars.svg": "/PCS-DataViewer/static/media/bars.e410db19736998ac116c.svg",
     "index.html": "/PCS-DataViewer/index.html",
     "main.fc48bcdb.css.map": "/PCS-DataViewer/static/css/main.fc48bcdb.css.map",
-    "main.0106c9ca.js.map": "/PCS-DataViewer/static/js/main.0106c9ca.js.map"
+    "main.8cb5f38f.js.map": "/PCS-DataViewer/static/js/main.8cb5f38f.js.map"
   },
   "entrypoints": [
     "static/css/main.fc48bcdb.css",
-    "static/js/main.0106c9ca.js"
+    "static/js/main.8cb5f38f.js"
   ]
 }
