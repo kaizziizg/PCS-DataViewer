@@ -10733,3 +10733,13 @@ a.link-on-bg:hover {
 .Ranking{
 	padding: auto;
 }
+
+.Radar{
+	padding:'3rem'
+}
+
+.TeamRadar{
+	max-width: 500px;
+	text-align:center;
+  	margin:0 auto;
+}

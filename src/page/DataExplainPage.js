@@ -1,12 +1,14 @@
 import React from "react";
 import Alert from 'react-bootstrap/Alert';
 import {Card} from "react-bootstrap";
+
 export default function FirstTeamPage() {
 	return (
 		<div className="text-center">
 			<h1 className="text-center QATitle"> 數據解釋 </h1>
 			<Warning/>
 			<QADrawer/>
+			{/* <ExplainData/> */}
 		</div>
 	);
 }

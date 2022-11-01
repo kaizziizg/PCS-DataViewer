@@ -10,18 +10,18 @@ import DataExplainPage from "./page/DataExplainPage";
 // HeaderBar
 import KanBan from "./components/KanBan";
 // Route
-import { HashRouter, Route, Routes, Link } from "react-router-dom";
-
-import reportWebVitals from "./reportWebVitals";
+import { HashRouter, Route, Routes } from "react-router-dom";
 // import App from './app'
 import "./css/theme.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "@fontsource/maven-pro";
+import Counter from "./components/Counter";
 
 function Not404() {
 	return (
 		<div className="text-center errorText">
-			<img src="/img/iconf512.png" className="errorImg rotate"/>
+			{/* github圖片路徑 */}
+			<img src="./img/iconf512.png" alt="標題圖片" className="errorImg rotate"/>
 			<br />
 			你似乎跑到一個錯誤路徑
 			<br />
@@ -38,8 +38,10 @@ const App = () => {
 	return (
 		<HashRouter>
 			<div className="App container py-lg-5 position-relative">
+				<Counter/>
 				<KanBan />
 				<Routes>
+					
 					<Route path="/QA" element={<QAPage />} />
 					<Route path="/Player" element={<PlayerDataPage />} />
 					<Route path="/FirstTeam" element={<FirstTeamPage />} />
@@ -58,3 +60,4 @@ root.render(
 		<App />
 	</React.StrictMode>
 );
+

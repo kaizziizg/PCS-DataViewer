@@ -2,10 +2,6 @@ import React from "react";
 import {
 	Navbar,
 	Nav,
-	NavDropdown,
-	Form,
-	FormControl,
-	Button,
 } from "react-bootstrap"; //導入需要的component
 import {
 	NavLink 
@@ -21,7 +17,8 @@ export default function KanBan() {
 							<NavLink to="/" className="navbar-brand">
 								<img
 									className="logo-icon"
-									src="/img/icon512.png"
+									// github Page圖片路徑
+									src="./img/icon512.png" 
 									alt="logo"
 								/>
 								{/* <span className="pcs-logo-text">PCS</span> */}

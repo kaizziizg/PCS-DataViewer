@@ -8,6 +8,16 @@ const options = {
 			borderWidth: 3,
 		},
 	},
+	scale: {
+		min: -10,
+		max: 10,
+		ticks: {
+			beginAtZero: false,
+			max: 10,
+			min: -10,
+			
+		}
+	},
 };
 
 function RadarChart({ chartData }) {

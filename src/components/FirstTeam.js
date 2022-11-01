@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Table from "react-bootstrap/Table";
 import axios from "axios";
-import {ServerIP} from "../Environment"
+import { ServerIP } from "../Environment";
 
 const server = ServerIP;
 
@@ -31,7 +31,6 @@ export default function FirstTeam() {
 		Players: [],
 		Scores: [],
 	});
-	
 
 	let TableList = [];
 
@@ -58,65 +57,41 @@ export default function FirstTeam() {
 	for (let i = 0; i < 10; i++) {
 		TableList.push(
 			<tr>
-				<th>
-                    <div className="Ranking align-items-center">
-                        {i+1}
-                    </div>
-                    </th>
-				<th>
+				<th>{i + 1}</th>
+				<th colSpan={2}>
 					{Top.Teams[i]}
 					<br />
-                    <div className="PlayerName">
-                    {Top.Players[i]}
-                    </div>
+					<div className="PlayerName">{Top.Players[i]}</div>
 					<br />
-                    <div className="PlayerScore">
-					{Top.Scores[i]}
-                    </div>
+					<div className="PlayerScore">{Top.Scores[i]}</div>
 				</th>
-				<th>
+				<th colSpan={2}>
 					{Jug.Teams[i]}
 					<br />
-					<div className="PlayerName">
-                    {Jug.Players[i]}
-                    </div>
+					<div className="PlayerName">{Jug.Players[i]}</div>
 					<br />
-                    <div className="PlayerScore">
-					{Jug.Scores[i]}
-                    </div>
+					<div className="PlayerScore">{Jug.Scores[i]}</div>
 				</th>
-				<th>
+				<th colSpan={2}>
 					{Mid.Teams[i]}
 					<br />
-					<div className="PlayerName">
-                    {Mid.Players[i]}
-                    </div>
+					<div className="PlayerName">{Mid.Players[i]}</div>
 					<br />
-                    <div className="PlayerScore">
-					{Mid.Scores[i]}
-                    </div>
+					<div className="PlayerScore">{Mid.Scores[i]}</div>
 				</th>
-				<th>
+				<th colSpan={2}>
 					{Adc.Teams[i]}
 					<br />
-					<div className="PlayerName">
-                    {Adc.Players[i]}
-                    </div>
+					<div className="PlayerName">{Adc.Players[i]}</div>
 					<br />
-                    <div className="PlayerScore">
-					{Adc.Scores[i]}
-                    </div>
+					<div className="PlayerScore">{Adc.Scores[i]}</div>
 				</th>
-				<th>
+				<th colSpan={2}>
 					{Sup.Teams[i]}
 					<br />
-					<div className="PlayerName">
-                    {Sup.Players[i]}
-                    </div>
+					<div className="PlayerName">{Sup.Players[i]}</div>
 					<br />
-                    <div className="PlayerScore">
-					{Sup.Scores[i]}
-                    </div>
+					<div className="PlayerScore">{Sup.Scores[i]}</div>
 				</th>
 			</tr>
 		);
@@ -126,12 +101,12 @@ export default function FirstTeam() {
 		<Table striped bordered hover variant="dark">
 			<thead>
 				<tr>
-					<th>#</th>
-					<th>Top</th>
-					<th>Jug</th>
-					<th>Mid</th>
-					<th>Adc</th>
-					<th>Bot</th>
+					<th colSpan={2}>#</th>
+					<th colSpan={2}>Top</th>
+					<th colSpan={2}>Jug</th>
+					<th colSpan={2}>Mid</th>
+					<th colSpan={2}>Adc</th>
+					<th colSpan={2}>Bot</th>
 				</tr>
 			</thead>
 			<tbody>{TableList}</tbody>
