@@ -11,19 +11,19 @@ export default function TeamTab(props) {
 			justify
 		>
 			<Tab eventKey="TOP" title="TOP">
-				<TeamRadar t1={props.t1} t2={props.t2} Role="TOP" />
+				<TeamRadar t1={props.t1} t2={props.t2} Role="Top" />
 			</Tab>
 			<Tab eventKey="JUG" title="JUG">
-				<TeamRadar t1={props.t1} t2={props.t2} Role="jungle" />
+				<TeamRadar t1={props.t1} t2={props.t2} Role="Jungle" />
 			</Tab>
 			<Tab eventKey="MID" title="MID">
-				<TeamRadar t1={props.t1} t2={props.t2} Role="MID" />
+				<TeamRadar t1={props.t1} t2={props.t2} Role="Mid" />
 			</Tab>
 			<Tab eventKey="ADC" title="ADC">
-				<TeamRadar t1={props.t1} t2={props.t2} Role="bot" />
+				<TeamRadar t1={props.t1} t2={props.t2} Role="Bot" />
 			</Tab>
 			<Tab eventKey="SUP" title="SUP">
-				<TeamRadar t1={props.t1} t2={props.t2} Role="support" />
+				<TeamRadar t1={props.t1} t2={props.t2} Role="Support" />
 			</Tab>
 		</Tabs>
 	);
