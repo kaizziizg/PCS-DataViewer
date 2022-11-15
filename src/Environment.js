@@ -1,3 +1,3 @@
 // const ServerIP = "http://localhost:3000";
-const ServerIP = "https://golang-api2-d4tkwrdpmq-de.a.run.app/";
+const ServerIP = "https://pcs-dataviewer-72xqtbvina-de.a.run.app/";
 export {ServerIP}
