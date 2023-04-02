@@ -73,7 +73,11 @@ func main() {
 	router.Use(cors.Default())
 	//設定大小寫通吃
 	router.RedirectFixedPath = true
-
+	router.GET("/", func(c *gin.Context) {
+		c.JSON(200, gin.H{ // response json
+			"message": "hello world",
+		})
+	})
 	router.GET("/multiplayer", multiplayer)
 	router.GET("/schedule", schedule)
 	router.GET("/ChampionPick", ChampionPick)
